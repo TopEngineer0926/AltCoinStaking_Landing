@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "54px",
     color: "white",
     marginBottom: "8rem",
-    textAlign: 'center'
+    textAlign: "center",
   },
 }));
 
@@ -22,14 +22,18 @@ const Hodlr = (props) => {
       <Grid item className={classes.itemHodlrTitle}>
         Some reasons hodlr’s love us
       </Grid>
-      <Grid item style={{ width: "100%" }}>
-        <Grid container justify="center" alignItems="center" spacing={10}>
+      <Grid item>
+        <Grid container justify="center" alignItems="center">
           <Grid
             item
             sm={12}
             md={6}
             lg={3}
-            style={{ display: "flex", justifyContent: "center" }}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              margin: "90px 5px 5px",
+            }}
           >
             <HodlrBlock
               path="/hodlr/flat.png"
@@ -42,7 +46,11 @@ const Hodlr = (props) => {
             sm={12}
             md={6}
             lg={3}
-            style={{ display: "flex", justifyContent: "center" }}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              margin: "90px 5px 5px",
+            }}
           >
             <HodlrBlock
               path="/hodlr/calender.png"
@@ -55,7 +63,11 @@ const Hodlr = (props) => {
             sm={12}
             md={6}
             lg={3}
-            style={{ display: "flex", justifyContent: "center" }}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              margin: "90px 5px 5px",
+            }}
           >
             <HodlrBlock
               path="/hodlr/medal.png"
@@ -68,7 +80,11 @@ const Hodlr = (props) => {
             sm={12}
             md={6}
             lg={3}
-            style={{ display: "flex", justifyContent: "center" }}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              margin: "90px 5px 5px",
+            }}
           >
             <HodlrBlock
               path="/hodlr/arrow.png"

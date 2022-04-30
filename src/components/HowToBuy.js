@@ -111,7 +111,6 @@ const HowToBuy = (props) => {
             <Grid container className={classes.buttonContainer}>
               <Grid item>
                 <Button
-                  component={Link}
                   href="/estimate"
                   className={classes.getStartedButton}
                   variant="contained"

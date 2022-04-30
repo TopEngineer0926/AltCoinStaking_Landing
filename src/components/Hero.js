@@ -62,6 +62,12 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: "30em",
     },
   },
+  hero_back: {
+    width: "100%",
+    [theme.breakpoints.down("xs")]: {
+      maxWidth: "80%",
+    },
+  },
 }));
 
 const Hero = (props) => {
@@ -72,21 +78,30 @@ const Hero = (props) => {
       <Grid item>
         <Grid container>
           <Grid item>
-            <img alt="company logo" src="/header_logo.png" width={350} />
+            <img
+              alt="company logo"
+              src="/header_logo.png"
+              style={{ width: "90vw", maxWidth: "350px" }}
+            />
           </Grid>
         </Grid>
       </Grid>
       <Grid item>
-        <Grid container justify="center" alignItems="center" direction="row" spacing={3}>
+        <Grid
+          container
+          justify="center"
+          alignItems="center"
+          direction="row"
+          spacing={3}
+        >
           <Grid sm item className={classes.heroTextContainer}>
             <Typography
               variant="h1"
               align="left"
               className={classes.hero_title}
             >
-              Get a 'Stake in pool' NFT
-              & Own Part of a Cross-
-              Chain Staking Pool
+              Get a 'Stake in pool' NFT & Own Part of a Cross- Chain Staking
+              Pool
             </Typography>
             <Grid item>
               <Typography
@@ -107,7 +122,6 @@ const Hero = (props) => {
             <Grid container className={classes.buttonContainer} spacing={2}>
               <Grid item>
                 <Button
-                  component={Link}
                   href="/estimate"
                   className={classes.getStartedButton}
                   variant="contained"
@@ -118,7 +132,6 @@ const Hero = (props) => {
               </Grid>
               <Grid item>
                 <Button
-                  component={Link}
                   href="/revolution"
                   variant="outlined"
                   className={classes.buyNowButton}
@@ -130,7 +143,7 @@ const Hero = (props) => {
             </Grid>
           </Grid>
           <Grid sm item className={classes.animation}>
-            <img src="/hero_back.png" width={"100%"} />
+            <img className={classes.hero_back} src="/hero_back.png" />
           </Grid>
         </Grid>
       </Grid>

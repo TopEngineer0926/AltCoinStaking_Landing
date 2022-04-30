@@ -8,6 +8,7 @@ import Link from "../Link";
 const useStyles = makeStyles((theme) => ({
   heroTextContainer: {
     minWidth: "21.5em",
+    margin: "10px",
     [theme.breakpoints.down("xs")]: {
       marginLeft: 0,
     },
@@ -56,6 +57,7 @@ const useStyles = makeStyles((theme) => ({
   animation: {
     maxWidth: "50em",
     minWidth: "21em",
+    margin: "10px",
     marginTop: "2em",
     [theme.breakpoints.down("sm")]: {
       maxWidth: "30em",
@@ -72,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 30,
   },
   itemBlock: {
-    width: '80%',
+    width: "80%",
     height: 100,
     background: "rgba(37, 64, 123,0.2)",
     borderRadius: 10,
@@ -89,13 +91,13 @@ const HowItWorks = (props) => {
   const classes = useStyles();
 
   return (
-    <Grid container justify="center" alignItems="center" direction="row" spacing={8}>
+    <Grid container justify="center" alignItems="center" direction="row">
       <Grid sm={12} md={12} lg={6} item className={classes.animation}>
-        <img src="/how_it_works.png" width='100%'/>
+        <img src="/how_it_works.png" width="100%" />
       </Grid>
       <Grid sm={12} md={12} lg={6} item className={classes.heroTextContainer}>
         <Grid container direction="column" alignItems="flex-start">
-          <Grid item style={{ width: '100%' }}>
+          <Grid item style={{ width: "100%" }}>
             <Typography
               variant="h1"
               align="left"

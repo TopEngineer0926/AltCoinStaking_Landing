@@ -25,7 +25,7 @@ import CustomerSays from "../src/components/CustomerSays";
 import HowToBuy from "../src/components/HowToBuy";
 import OurRoadmap from "../src/components/OurRoadmap";
 import Subscribe from "../src/components/Subscribe";
-import Footer from '../src/ui/Footer';
+import Footer from "../src/ui/Footer";
 
 const useStyles = makeStyles((theme) => ({
   buttonContainer: {
@@ -47,9 +47,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   mainContainer: {
-    background: "#07071C",
     backgroundImage: "url(/background.png)",
-    backgroundSize: "cover",
+    backgroundColor: "#07071c",
+    backgroundSize: "contain",
     paddingLeft: 100,
     paddingRight: 100,
     [theme.breakpoints.down("md")]: {
@@ -171,7 +171,7 @@ export default function LandingPage(props) {
     <Grid container direction="column" className={classes.mainContainer}>
       <Head>
         <title key="title">
-          Software Design and Development - mobile - websites | Demo
+          AltcoinStaking
         </title>
         <meta
           name="description"
@@ -207,7 +207,7 @@ export default function LandingPage(props) {
         <SalesCome />
       </Grid>
       <Grid item className={classes.mainMargin}>
-        <CustomerSays />
+        {/* <CustomerSays /> */}
       </Grid>
       <Grid item className={classes.mainMargin}>
         <OurRoadmap />

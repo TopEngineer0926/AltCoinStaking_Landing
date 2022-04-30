@@ -11,7 +11,7 @@ const Logos = () => {
         <img src="/banner/cointelegraph.png" />
       </Grid>
       <Grid item sm={6} md={4} lg={2}>
-        <img src="/banner/forbes.png" />
+        <img src="/banner/msn.png" />
       </Grid>
       <Grid item sm={6} md={4} lg={2}>
         <img src="/banner/yahoo.png" />

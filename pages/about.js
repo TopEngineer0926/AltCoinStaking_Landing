@@ -9,7 +9,7 @@ import Hidden from "@material-ui/core/Hidden";
 
 import CallToAction from "../src/ui/CallToAction";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   missionStatement: {
     fontStyle: "italic",
     fontWeight: 300,
