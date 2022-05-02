@@ -1,7 +1,7 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
-import HodlrBlock from "./hodlrBlock";
+import HodlrBlock from "./HodlrBlock";
 const useStyles = makeStyles((theme) => ({
   itemHodlrTitle: {
     fontFamily: "Titillium Web",
@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 700,
     fontSize: "54px",
     color: "white",
-    marginBottom: "8rem",
+    marginBottom: "5rem",
     textAlign: "center",
   },
 }));
@@ -22,7 +22,7 @@ const Hodlr = (props) => {
       <Grid item className={classes.itemHodlrTitle}>
         Some reasons hodlr’s love us
       </Grid>
-      <Grid item>
+      <Grid item style={{width: '100%'}}>
         <Grid container justify="center" alignItems="center">
           <Grid
             item
@@ -32,7 +32,7 @@ const Hodlr = (props) => {
             style={{
               display: "flex",
               justifyContent: "center",
-              margin: "90px 5px 5px",
+              marginTop: 90,
             }}
           >
             <HodlrBlock
@@ -49,7 +49,7 @@ const Hodlr = (props) => {
             style={{
               display: "flex",
               justifyContent: "center",
-              margin: "90px 5px 5px",
+              marginTop: 90,
             }}
           >
             <HodlrBlock
@@ -66,7 +66,7 @@ const Hodlr = (props) => {
             style={{
               display: "flex",
               justifyContent: "center",
-              margin: "90px 5px 5px",
+              marginTop: 90,
             }}
           >
             <HodlrBlock
@@ -83,7 +83,7 @@ const Hodlr = (props) => {
             style={{
               display: "flex",
               justifyContent: "center",
-              margin: "90px 5px 5px",
+              marginTop: 90,
             }}
           >
             <HodlrBlock

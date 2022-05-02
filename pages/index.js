@@ -49,16 +49,18 @@ const useStyles = makeStyles((theme) => ({
   mainContainer: {
     backgroundImage: "url(/background.png)",
     backgroundColor: "#07071c",
-    backgroundSize: "contain",
+    backgroundSize: "cover",
     paddingLeft: 100,
     paddingRight: 100,
     [theme.breakpoints.down("md")]: {
       paddingLeft: 50,
       paddingRight: 50,
+      backgroundSize: "contain",
     },
     [theme.breakpoints.down("xs")]: {
       paddingLeft: 10,
       paddingRight: 10,
+      backgroundSize: "contain",
     },
 
     // paddingLeft: "13rem",
