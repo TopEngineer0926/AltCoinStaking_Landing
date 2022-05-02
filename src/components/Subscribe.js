@@ -27,6 +27,12 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 700,
     fontSize: 54,
     color: "white",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 34,
+    },
+    [theme.breakpoints.down("md")]: {
+      fontSize: 44,
+    },
   },
   itemTitle: {
     // marginLeft: 128,
@@ -69,6 +75,7 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
     width: "100%",
     zIndex: 20,
+    padding: '0 20px',
   },
   subscribeBtn: {
     background: "linear-gradient(95.31deg, #006EC3 0%, #0016B2 100%)",
@@ -101,6 +108,14 @@ const useStyles = makeStyles((theme) => ({
     background: "#01204C",
     borderRadius: 8,
   },
+  blockContent: {
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 12,
+    },
+    [theme.breakpoints.down("md")]: {
+      fontSize: 16,
+    },
+  }
 }));
 
 const Subscribe = (props) => {

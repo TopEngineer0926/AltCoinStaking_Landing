@@ -58,8 +58,8 @@ const useStyles = makeStyles((theme) => ({
       backgroundSize: "contain",
     },
     [theme.breakpoints.down("xs")]: {
-      paddingLeft: 10,
-      paddingRight: 10,
+      paddingLeft: 30,
+      paddingRight: 30,
       backgroundSize: "contain",
     },
 
