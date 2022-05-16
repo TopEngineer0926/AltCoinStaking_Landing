@@ -132,10 +132,10 @@ const Hero = (props) => {
               </Grid>
               <Grid item>
                 <Button
-                  href="/revolution"
+                  href="/mint"
                   variant="outlined"
                   className={classes.buyNowButton}
-                  onClick={() => props.setValue(2)}
+                  // onClick={() => props.setValue(2)}
                 >
                   Buy Now
                 </Button>

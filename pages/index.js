@@ -209,7 +209,7 @@ export default function LandingPage(props) {
         <SalesCome />
       </Grid>
       <Grid item className={classes.mainMargin}>
-        {/* <CustomerSays /> */}
+        <CustomerSays />
       </Grid>
       <Grid item className={classes.mainMargin}>
         <OurRoadmap />
