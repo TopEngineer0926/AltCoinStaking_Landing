@@ -65,6 +65,16 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 700,
     fontStyle: 'normal',
     marginLeft: 15
+  },
+  heroText: {
+    fontFamily: 'Titillium Web',
+    fontSize: 18,
+    fontStyle: 'normal',
+    fontWeight: 600,
+    color: 'white',
+    '&:hover': {
+      textDecoration: 'unset'
+    }
   }
 }));
 
@@ -84,7 +94,7 @@ const HeroMint = (props) => {
             />
           </Grid>
           <Grid item style={{alignSelf: 'center'}}>
-            <Link href="#mint-area"  style={{color: 'white'}}>
+            <Link href="#mint-area" className={classes.heroText}>
               Mint
             </Link>
           </Grid>
