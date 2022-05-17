@@ -119,6 +119,7 @@ const MintBlock = (props) => {
             <Button
               variant="outlined"
               className={classes.mintNowButton}
+              onClick={() => props.mint()}
             >
               MINT NOW
             </Button>
@@ -134,6 +135,7 @@ MintBlock.propTypes = {
   title: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
+  mint: PropTypes.func.isRequired
 };
 
 export default MintBlock;
